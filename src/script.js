@@ -93,9 +93,10 @@ fontLoader.load("/fonts/Poppins_Regular.json", (font) => {
  * Textures
  */
 
-const randomNumber = Math.floor(Math.random() * (11 - 1)) + 1;
+const randomNumber = Math.floor(Math.random() * (11 - 9)) + 9;
+console.log(randomNumber)
 const textureLoader = new THREE.TextureLoader();
-const matcapTexture = textureLoader.load(`./textures/matcaps/9.jpeg`);
+const matcapTexture = textureLoader.load(`./textures/matcaps/${randomNumber}.jpeg`);
 matcapTexture.colorSpace = THREE.SRGBColorSpace;
 
 /**

@@ -28,7 +28,7 @@ scene.add(textGroup);
 
 const fontLoader = new FontLoader();
 fontLoader.load("/fonts/Poppins_Regular.json", (font) => {
-  const textGeometry = new TextGeometry("aspiring", {
+  const textGeometry = new TextGeometry("creative", {
     font: font,
     size: 1,
     depth: 0.8,
@@ -41,7 +41,7 @@ fontLoader.load("/fonts/Poppins_Regular.json", (font) => {
   });
   const text = new THREE.Mesh(textGeometry, material);
 
-  const textGeometry2 = new TextGeometry("creative", {
+  const textGeometry2 = new TextGeometry("development", {
     font: font,
     size: 1,
     depth: 0.8,
@@ -54,7 +54,7 @@ fontLoader.load("/fonts/Poppins_Regular.json", (font) => {
   });
   const text2 = new THREE.Mesh(textGeometry2, material);
 
-  const textGeometry3 = new TextGeometry("developer", {
+  const textGeometry3 = new TextGeometry("enthusiast", {
     font: font,
     size: 1,
     depth: 0.8,

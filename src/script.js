@@ -11,9 +11,13 @@ import { TextGeometry } from "three/addons/geometries/TextGeometry.js";
 // const gui = new GUI();
 
 // Watermark
-const watermark = document.createElement("div");
+const watermark = document.createElement("a");
 watermark.className = "watermark";
 watermark.innerText = "made by @davinzaki";
+watermark.href = "https://github.com/davinzaki";
+watermark.target = "_blank";
+watermark.rel = "noopener noreferrer";
+
 document.body.appendChild(watermark);
 
 // Canvas
